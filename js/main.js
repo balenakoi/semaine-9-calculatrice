@@ -1,3 +1,5 @@
+//  VERSION SIMPLE
+
 // var display = document.getElementById("display");
 //
 //
@@ -15,6 +17,9 @@
 //   operators = eval(operators);
 //   display.value = operators;
 // }
+
+
+//VERSION COMPLEX
 var display = document.getElementById('display');
 var saved_value = null;
 var operator = '';
