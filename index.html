@@ -4,25 +4,59 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Calculatrice</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href="bootstrap-social.css" rel="stylesheet" >
+ <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <div class="container">
+        <div class="display">
+          <input type="text" id="display" style=" width: 100%;height:50px;  text-align:right;">
+          <div id="total"></div>
+        </div>
+        <div class="row">
+         <table class="table">
+          <tr>
+            <td><input class="button number" type="button" value="7"></td>
+            <td><input class="button number" type="button" value="8"></td>
+            <td><input class="button number" type="button" value="9"></td>
+            <td><input id="multi" class="button" type="button" value="x"></td>
+         </tr>
+        <tr>
+          <td><input class="button number" type="button" value="4"></td>
+          <td><input class="button number" type="button" value="5"></td>
+          <td><input class="button number" type="button" value="6"></td>
+          <td><input id="minus" class="button" type="button" value="-"></td>
+       </tr>
+       <tr>
+          <td><input class="button number" type="button" value="1"></td>
+          <td><input class="button number" type="button" value="2"></td>
+          <td><input class="button number" type="button" value="3"></td>
+          <td><input id="plus" class="button" type="button" value="+" ></td>
+       </tr>
+       <tr>
+          <td><input class="button number" type="button" value="0"></td>
+          <td><input class="button number" type="button" value="."></td>
+          <td><input id="divide"  class="button" type="button" value="/" ></td>
+          <td><input class="button" type="button" value="=" onclick="Result()"></td>
+       </tr>
+    </table>
+   <input id="clear" type="button" value="C" style="width:70%; margin-left:50px;">
+  </div>
+  </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
